@@ -19,7 +19,10 @@ int main(void)
 	KEY_Init(); 				//按键初始化 
   TIM3_Int_Init(999,83);	
 	tp_dev.init();				//触摸屏初始化
+	lv_init();						//lvgl系统初始化
+	lv_demo_benchmark();
  	while(1)
 	{
+		lv_timer_handler();
 	}
 }

@@ -1,4 +1,5 @@
 #include "timer.h"
+#include "lvgl.h"
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
 //ALIENTEK STM32F407开发板
@@ -49,7 +50,7 @@ void TIM3_IRQHandler(void)
 { 		    		  			    
 	if(TIM3->SR&TIM_IT_Update)//溢出中断
 	{
-		//lv_tick_inc(1);//lvgl的1ms心跳
+		lv_tick_inc(1);//lvgl的1ms心跳
 	}				   
 	TIM3->SR = (uint16_t)~TIM_IT_Update;
 }
