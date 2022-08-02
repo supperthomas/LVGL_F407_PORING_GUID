@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\HARDWARE\LED;..\HARDWARE\LCD;..\HARDWARE\KEY;..\HARDWARE\IIC;..\HARDWARE\24CXX;..\FWLIB\inc;..\HARDWARE\TOUCH;..\HARDWARE\TIMER;..\lvgl;..\lvgl\src\core;..\lvgl\src\draw;..\lvgl\src\extra;..\lvgl\src\font;..\lvgl\src\hal;..\lvgl\src\misc;..\lvgl\src\widgets</IncludePath>
+              <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\HARDWARE\LED;..\HARDWARE\LCD;..\HARDWARE\KEY;..\HARDWARE\IIC;..\HARDWARE\24CXX;..\FWLIB\inc;..\HARDWARE\TOUCH;..\HARDWARE\TIMER;..\lvgl;..\lvgl\src\core;..\lvgl\src\draw;..\lvgl\src\extra;..\lvgl\src\font;..\lvgl\src\hal;..\lvgl\src\misc;..\lvgl\src\widgets;..\lvgl\src\hal;..\lvgl\examples\porting;..\..\LED</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1177,6 +1177,16 @@
               <FileName>lv_font_bechmark_montserrat_28_compr_az.c.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\lvgl\demos\benchmark\assets\lv_font_bechmark_montserrat_28_compr_az.c.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>porting</GroupName>
+          <Files>
+            <File>
+              <FileName>lv_port_disp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lvgl\examples\porting\lv_port_disp.c</FilePath>
             </File>
           </Files>
         </Group>
